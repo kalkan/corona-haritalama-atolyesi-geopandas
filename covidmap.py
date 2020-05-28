@@ -7,7 +7,7 @@ data = data[0]
     
 data_cases = data[['Country,Other', 'TotalCases', 'TotalDeaths']]
 # https://hub.arcgis.com/datasets/a21fdb46d23e4ef896f31475217cbb08_1?geometry=-80.859%2C-89.944%2C75.234%2C48.630
-world_data = gpd.read_file(r'C:\Users\uzayuzal\Documents\GitHub\mapping-coronavirus\world.shp')
+world_data = gpd.read_file(r'world.shp')
 
 world_data.plot()
 
@@ -27,7 +27,7 @@ world_data.replace('Bahamas, The', 'Bahamas', inplace = True)
 world_data.replace('Byelarus', 'Belarus', inplace = True)
 world_data.replace('South Korea', 'S. Korea', inplace = True)
 world_data.replace('United States', 'USA', inplace = True)
-world_data.replace('UK.', 'UK', inplace = True)
+world_data.replace('United Kingdom', 'UK', inplace = True)
 world_data.replace('United Arab Emirates', 'UAE', inplace = True)
 world_data.replace('Macau', 'Macao', inplace = True)
 world_data.replace('Macedonia', 'North Macedonia', inplace = True)
